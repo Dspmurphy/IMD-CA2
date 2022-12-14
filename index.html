@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMD CA2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" text="style/css" href="style.css">
+</head>
+</head>
+<body>
+    <div id="alert" class="alert alert-success" role="alert">
+        <button class="btn btn-close border-dark text-danger float-end" onclick="closeAlert()"></button>
+        <h3 class="alert-heading">Email Sent</h3>
+        <h5>Email has been sent. You can expect a reply within 1-5 business days. Thank you for your email.</h5>
+    </div>
+
+    <div id="splash" class="container-fluid">
+        <div class="row h-100 mt-5">
+        <div class="col-6">
+            <img id="me" class="img-fluid h-50 w-50" src="images/me.JPG" alt="image">
+        </div>
+        <div class="col-6">
+            <h1 class="mt-3">Darragh Murphy</h1>
+            <p class="mt-3">Email: X00162272@mytudublin.ie</p>
+            <button class="btn btn-primary btn-outline-dark m-2 mt-4 float-right" onclick="displayForm()"><a class="text-decoration-none  text-white" href="#contact">Contact</a></button>
+            <div class="card mt-5 p-2 w-30">
+                <p>Welcome to my page. This page helps to explain who I am by displaying information about myself.
+                    I hope you enjoy the read.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top text-center">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0 m-1 text-center">
+                    <li class="nav-item">
+                    <a class="nav-link text-light mx-2" aria-current="page" href="#splash">Splash</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-light mx-2" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#work">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-2" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light mx-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Usings
+                        </a>
+                        <ul class="dropdown-menu bg-dark border-white">
+                        <li><a class="dropdown-item text-light" href="#theory">Theory</a></li>
+                        <li><a class="dropdown-item text-light" href="#features">Features</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about"><br></div>
+    <div id="about-info" class="container element">
+        <div class="row p-2">
+         <div class="col-6 border-end border-dark">
+            <h1 class="text-center mt-5">About Me</h1>
+            <p class="mt-5 text-center font-weight-bold">25% of Content Viewed</p>
+            <div class="progress mt-2">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="card">
+            <div class="card-body">
+            <p class="font-weight-normal">Hello, My name is Darragh Murphy. I am a 4th year student in TU Dublin Tallaght Campus
+            studying Computer Science with Software Development. I am a resepectful and punctual
+            person who likes to help people whenever I can. I have experience using programming languages such
+            as Python, Java, C++ and C# to name a few. I have a strong work ethic, I also have 
+            developed great awareness, customer and teamworking skills from my previous work experiences. I am interested in
+            working in teams that develop and manage systems which allows me to create useful software solutions as well as 
+            contributing to a team.
+            </p>
+            </div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+
+    <div id="education"><br></div>
+    <div id="education-info" class="container element">
+        <div class="row p-2">
+            <div class="col-6 border-end border-dark">
+                <h1 class="text-center mt-5">Education</h1>
+                <h2 class="text-center mt-5 p-2 border border-dark"><a class="text-decoration text-dark" href="https://www.tudublin.ie/explore/our-campuses/tallaght/" 
+                target="_blank">
+                    TU Dublin - Tallaght Campus</a>
+                </h2>
+                <h3 class="text-center mt-5 mx-2 text-secondary">2019 - to date Bachelor of Science (Hons) in Computing with Software Development</h3>
+                <p class="mt-5 text-center font-weight-bold">37.5% of Content Viewed</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 37.5%" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h3 class="text-center m-2 border-bottom border-dark p-1">Grades</h3>
+                <div class="accordion" id="acordion-content">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="four">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#four-info" aria-expanded="false" aria-controls="four-info">
+                          4th Year
+                        </button>
+                      </h2>
+                      <div id="four-info" class="accordion-collapse collapse" aria-labelledby="four" data-bs-parent="#acordion-content">
+                        <div class="accordion-body">
+                            <p class="text-center border-bottom border-dark">GPA: TBC</p>
+                            <p class="text-center">Enterprise Performance Architecture: TBC</p>
+                            <p class="text-center">Applied Machine Learning: TBC</p>
+                            <p class="text-center">Enterprise Applications Development 1: TBC</p>
+                            <p class="text-center">Interactive Media Design and Visualisation: TBC</p>
+                            <p class="text-center">Information Management: TBC</p>
+                            <p class="text-center">4th Year Project: TBC</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="three">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#three-info" aria-expanded="false" aria-controls="three-info">
+                            3rd Year
+                        </button>
+                      </h2>
+                      <div id="three-info" class="accordion-collapse collapse" aria-labelledby="three" data-bs-parent="#acordion-content">
+                        <div class="accordion-body">
+                                <p class="text-center border-bottom border-dark">GPA: 3.21</p>
+                                <p class="text-center">Data Analysis: B</p>
+                                <p class="text-center">Data Structures & Algorithms: B+</p>
+                                <p class="text-center">Big Data Technologies: B+</p>
+                                <p class="text-center">Cloud Service & Distrib Comp: B-</p>
+                                <p class="text-center">Operating Systems: B</p>
+                                <p class="text-center">Server-side Web Development: B+</p>
+                                <p class="text-center">Experiential Learning: Passed</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                     <h2 class="accordion-header" id="two">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two-info" aria-expanded="false" aria-controls="two-info">
+                        2nd Year
+                        </button>
+                     </h2>
+                     <div id="two-info" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#acordion-content">
+                        <div class="accordion-body">
+                            <p class="text-center border-bottom border-dark">GPA: 3.46</p>
+                            <p class="text-center">Software Development 3: B+</p>
+                            <p class="text-center">Software Quality and Testing: B</p>
+                            <p class="text-center">Networking Fundamentals: B</p>
+                            <p class="text-center">Advanced Database Technologies: B+</p>
+                            <p class="text-center">Discrete Maths 2: A</p>
+                            <p class="text-center">Client Side Web Development: B+</p>
+                            <p class="text-center">Database Admin and Analysis: B</p>
+                            <p class="text-center">Management Science: A</p>
+                            <p class="text-center">Routing and Switching Essentials: B+</p>
+                            <p class="text-center">2nd Year Project: B</p>
+                            <p class="text-center">Information Security: B+</p>
+                            <p class="text-center">Software Development 4: A</p>
+                        </div>
+                     </div>
+                    </div>
+
+                    <div class="accordion-item">
+                     <h2 class="accordion-header" id="one">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#one-info" aria-expanded="false" aria-controls="one-info">
+                        1st Year
+                        </button>
+                     </h2>
+                     <div id="one-info" class="accordion-collapse collapse" aria-labelledby="one" data-bs-parent="#acordion-content">
+                        <div class="accordion-body">
+                            <p class="text-center border-bottom border-dark">GPA: 3.63</p>
+                            <p class="text-center">Software Development 2: A</p>
+                            <p class="text-center">System Analysis: B+</p>
+                            <p class="text-center">Social Media Communications: B+</p>
+                            <p class="text-center">Statistics: A</p>
+                            <p class="text-center">Database Fundamentals: A</p>
+                            <p class="text-center">Operating System Fundamentals: A</p>
+                            <p class="text-center">Software Development 1: B</p>
+                            <p class="text-center">Computer Architecture: B</p>
+                            <p class="text-center">Visual Design and User Experience: B+</p>
+                            <p class="text-center">Business and Information Systems: A</p>
+                            <p class="text-center">Discrete Maths 1: B+</p>
+                            <p class="text-center">Critical Skills Development: B+</p>
+                        </div>
+                     </div>
+                    </div>
+
+                </div>
+                <div id="projects">
+                    <h3 class="text-center m-2 mt-4 border-bottom border-dark p-1">Projects</h3>
+
+                    <div class="card bg-light mb-3 mt-2">
+                        <div class="card-header">4th Year Project</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Description</h5>
+                        <p class="card-text">
+                            This project is currently being worked on by myself. It is a Dog Managing Applications that allows multiple users to be 
+                            connected to a dog profile, where they can update the daily information of the dog to keep everyone else informed. Users can 
+                            also create and view missing dog alerts, see local park's locations and see information about different breeds.
+                        </p>
+                        <h5 class="card-title">Technologies Used</h5>
+                        <p class="card-text">
+                           Django, Javascript, Python, Vue.js
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light mb-3 mt-2">
+                        <div class="card-header">2nd Year Project</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Description</h5>
+                        <p class="card-text">
+                            A team project involving the development of an e-commerce website where prescription glasses are sold. 
+                            The website allows users to sign up or login to their account and use the website to create a booking using the booking system, purchase glasses or browse the shop using the search or filter functionality. 
+                            This project was completed in May 2021.
+                        </p>
+                        <h5 class="card-title">Technologies Used</h5>
+                        <p class="card-text">
+                           Django, Javascript, Python, Unit Tests
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           </div>
+    </div>
+
+    <div id="work"><br></div>
+    <div id="work-info" class="container element">
+        <div class="row p-2">
+            <div class="col-6 border-end border-dark">
+               <h1 class="text-center mt-5">Work Experience</h1>
+               <p class="mt-5 text-center font-weight-bold">50% of Content Viewed</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-6">
+            <button class="btn btn-primary" id="colgate-button" onclick="showWork()" disabled="true">Full Stack Developer Intern</button>
+            <button class="btn btn-primary" id="swan-button" onclick="showWork()">Leisure Attendant</button>
+                <div id="swan" class="card m-4">
+                    <div class="card-header">Swan Leisure</div>
+                        <div class="card-body">
+                            I worked as a Leisure Attendant, Lifeguard and Swim Teacher for Swan Leisure for around 5 years
+                            (2017-2018 and 2020-2022). During in my time I helped customers, taught swimming, lifeguarded the pool and 
+                            worked on parties and camps. This experience helped me to develop my skills very well.
+                        </div>
+                </div>
+                <div id="colgate" class="card m-4">
+                    <div class="card-header">Colgate Palmolive</div>
+                        <div class="card-body">
+                            I worked as a Full Stack Developer Intern for 8 months for Colgate Palmolive in 2022.
+                            During my time I developed my coding skills while working in a global developing team. I 
+                            enhanced my knowledge of Django and Python, learned React.js and more about the google suite
+                            during my internship.
+                        </div>
+                </div>
+            </div>
+           </div>
+    </div>
+
+    <div id="hobbies"><br></div>
+    <div id="hobbies-info" class="container element">
+        <div class="row p-2">
+            <div class="col-6 border-end border-dark">
+               <h1 class="text-center mt-5">Hobbies</h1>
+               <p class="mt-5 text-center font-weight-bold">62.5% of Content Viewed</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 62.5%" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-6">
+               <div class="row">
+                <div class="col-6">
+                    <div class="card m-1">
+                        <div class="card-header">Football</div>
+                        <img id="football-image" src="images/football.png" alt="football" class="card-img-top" onclick="showInfo('football')"></img>
+                        <div id="football-info" class="card-body hobby" onclick="showInfo('football')">
+                            I like to watch football and play football in my spare time.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card m-1">
+                        <div class="card-header">Hurling</div>
+                        <img id="hurling-image" src="images/hurling.png" alt="hurling" class="card-img-top" onclick="showInfo('hurling')"></img>
+                        <div id="hurling-info" class="card-body hobby" onclick="showInfo('hurling')">
+                            I played hurling for Ballyboden St. Endas and still like to go watch the matches.
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+               <div class="row">
+                <div class="col-6">
+                    <div class="card m-1">
+                        <div class="card-header">Swimming</div>
+                        <img id="swimming-image" src="images/swimming.png" alt="swimming" class="card-img-top" onclick="showInfo('swimming')"></img>
+                        <div id="swimming-info" class="card-body hobby" onclick="showInfo('swimming')">
+                            I like to teach swimming and lifesaving in my spare time for Irish Water Safety.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card m-1">
+                        <div class="card-header">Walking</div>
+                        <img id="walking-image" src="images/walking.png" alt="walking" class="card-img-top" onclick="showInfo('walking')"></img>
+                        <div id="walking-info" class="card-body hobby" onclick="showInfo('walking')">
+                            I like to walk with my dog and go on hikes when I have free time.
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+           </div>
+    </div>
+
+    <div id="contact"><br></div>
+    <div id="contact-info" class="container element">
+        <div class="row p-2">
+            <div class="col-6 border-end border-dark">
+               <h1 class="text-center mt-5">Contact Me</h1>
+               <p class="mt-5 text-center font-weight-bold">75% of Content Viewed</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-6">
+               <div class="font-weight-normal text-center card m-2 p-2">
+                <p>If you wish to contact me please email me at X00162272@mytudublin.ie</p>
+                <p>or click</p>
+                <div class="text-center">
+                <button class="btn btn-primary btn-outline-dark m-2 text-white float-right" onclick="displayForm()">Contact</button>
+                </div>
+               </div>
+               <div id="form" class="card">
+                <div class="card-header text-center">Contact Form</div>
+                <div class="card-body">
+                <div class="border-bottom border-dark m-1 form-control">
+                <p class="text-center">Email:</p>
+                <p class="text-center"><input id="email-input" type="email" placeholder="Enter in email here"></p>
+                </div>
+                <div class="border-bottom border-dark m-1 form-control">
+                <p class="text-center">Message:</p>
+                <p class="text-center"><input class="" id="message-input" type="text" placeholder="Enter in message here"></p>
+                </div>
+                <div class="text-center">
+                <button class="btn btn-primary btn-outline-dark m-2 mx-5" onclick="hideForm()"><a class="text-decoration-none text-white" href="#splash">Send</a></button>
+                </div>
+                </div>
+               </div>
+            </div>
+           </div>
+        
+    </div>
+
+    <div id="theory"><br></div>
+    <div id="theory-info" class="container element">
+        <div class="row p-2">
+            <div class="col-6 border-end border-dark">
+               <h1 class="text-center mt-5">Theory Aspects Followed</h1>
+               <p class="mt-5 text-center font-weight-bold">87.5% of Content Viewed</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 87.5%" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-6">
+               <div class="card">
+               <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Consistant formatting with each section having the same colour and layout</li>
+                    <li class="list-group-item">Simple and arranged coheriently with sections being able to be expanded on</li>
+                    <li class="list-group-item">Dynamic content is identifiable and can be interacted with through buttons or images being clicked</li>
+                    <li class="list-group-item">Content and background can be distinguished clearly</li>
+                    <li class="list-group-item">Content is ordered by priority</li>
+                    <li class="list-group-item">Content is easily readable and memorable</li>
+                  </ul>
+               </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features"><br></div>
+    <div id="features-info" class="container element">
+        <div class="row p-2">
+            <div class="col-6 border-end border-dark">
+               <h1 class="text-center mt-5">Bootstrap Features Implemented</h1>
+               <p class="mt-5 text-center font-weight-bold">100% of Content Viewed</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-6">
+               <div class="card">
+               <div class="card-body">
+
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Boostrap Feature</th>
+                        <th scope="col">Location</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Alert</td>
+                        <td>After Contact Form</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Close Button</td>
+                        <td>On Alert pop up</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Container</td>
+                        <td>All Sections</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Grid</td>
+                        <td>All Sections</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Image</td>
+                        <td>Splash | Hobbies</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Button</td>
+                        <td>Contact | Work Exp</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Navbar</td>
+                        <td>Main Navbar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Dropdown</td>
+                        <td>Main Navbar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>Card</td>
+                        <td>All Sections</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>Accordion</td>
+                        <td>Grades in Education</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>Collapse</td>
+                        <td>Accordion in Grades</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>Table</td>
+                        <td>Features</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td>List Group</td>
+                        <td>Theory</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14</th>
+                        <td>Form</td>
+                        <td>Contact</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">15</th>
+                        <td>Progress</td>
+                        <td>All Sections</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">16</th>
+                        <td>Styling</td>
+                        <td>All Sections</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+               </div>
+               </div>
+            </div>  
+            </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+        function showWork() {
+            var swan = document.getElementById("swan");
+            var colgate = document.getElementById("colgate");
+            var swanButton = document.getElementById("swan-button");
+            var colgateButton = document.getElementById("colgate-button");
+            if (swan.style.display == "none") {
+                colgate.style.display = "none";
+                swan.style.display = "block";
+                colgateButton.disabled = false;
+                swanButton.disabled = true; 
+            }
+            else {
+                swan.style.display = "none";
+                colgate.style.display = "block";
+                colgateButton.disabled = true;
+                swanButton.disabled = false; 
+            }
+        }
+
+        function showInfo(hobby) {
+            var hobbyImage = document.getElementById(hobby + "-image");
+            var hobbyInfo = document.getElementById(hobby + "-info");
+
+            if (hobbyInfo.style.display == "none") {
+                hobbyImage.style.display = "none";
+                hobbyInfo.style.display = "block";
+            }
+            else {
+                hobbyImage.style.display = "block";
+                hobbyInfo.style.display = "none";
+            }
+        }
+
+        function displayForm() {
+            var form = document.getElementById("form");
+            form.style.display = "block";
+        }
+
+        function hideForm() {
+            alert = document.getElementById("alert");
+            alert.style.display = "block";
+            var form = document.getElementById("form");
+            var email = document.getElementById("email-input");
+            var message = document.getElementById("message-input");
+            form.style.display = "none";
+            email.value = null;
+            message.value = null;
+        }
+
+        function closeAlert() {
+            alert = document.getElementById("alert");
+            alert.style.display = "none";
+
+        }
+    </script>
+
+</body>
+</html>
